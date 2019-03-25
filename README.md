@@ -72,6 +72,6 @@ Home. (n.d.). Retrieved from http://autism.ideas.org.my/
 Home. (n.d.). Retrieved from https://www.autismmalaysia.com/
 How to create a Side Navigation. Retrieved 25 March 2019 from https://www.w3schools.com/howto/howto_js_sidenav.asp
 Contact us. Kuching Autistic Association. Retrieved 25 March 2019 from http://www.kaa.org.my/ContactUs.html
-Contact us. INTERNATIONAL PSYCHOLOGY CENTRE SDN BHD. Retrieved 25 Narch 2019 from http://www.psychology.com.my/contact-us/#.XJlj1ygza00
+Contact us. INTERNATIONAL PSYCHOLOGY CENTRE SDN BHD. Retrieved 25 March 2019 from http://www.psychology.com.my/contact-us/#.XJlj1ygza00
 
 ------------------------------------END OF README SAMPLE ----------------------------------------
