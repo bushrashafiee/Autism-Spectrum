@@ -41,9 +41,9 @@ Future enhancements : • Add video
 • Enhace contents 
 
 Name : Syamimi
-Contributions :  • Pages: home, contact 
-• Web elements: input text button, cutout text
-Future enhancements : • 
+Contributions :  • Pages: home, contact, layout
+• Web elements: cutout text,color, font text
+Future enhancements : • enhance graphic
 • 
 
 3. Use of third party resources
@@ -70,6 +70,8 @@ What causes autism? (n.d.). Retrieved from https://www.webmd.com/brain/autism/qa
 Home. (n.d.). Retrieved from http://autism.ideas.org.my/
 
 Home. (n.d.). Retrieved from https://www.autismmalaysia.com/
-
+How to create a Side Navigation. Retrieved 25 March 2019 from https://www.w3schools.com/howto/howto_js_sidenav.asp
+Contact us. Kuching Autistic Association. Retrieved 25 March 2019 from http://www.kaa.org.my/ContactUs.html
+Contact us. INTERNATIONAL PSYCHOLOGY CENTRE SDN BHD. Retrieved 25 Narch 2019 from http://www.psychology.com.my/contact-us/#.XJlj1ygza00
 
 ------------------------------------END OF README SAMPLE ----------------------------------------
