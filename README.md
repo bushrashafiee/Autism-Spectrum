@@ -59,4 +59,17 @@ Photographer Name. Pexels. Retrieved 10 October 2018 from https://www.pexels.com
 
 Autism Speak. (2019, March 25). Retrieved from https://www.autismspeaks.org/what-autism
 
+Therapies and Treatments for Autism. (n.d.). Retrieved from https://iancommunity.org/cs/therapies_treatments
+
+CRNA, R. N. (n.d.). Autism: Characteristics, diagnosis, and understanding. Retrieved from https://www.medicalnewstoday.com/articles/323758.php
+
+What Are the Symptoms of Autism? (n.d.). Retrieved from https://www.autismspeaks.org/what-are-symptoms-autism
+
+What causes autism? (n.d.). Retrieved from https://www.webmd.com/brain/autism/qa/what-causes-autism
+
+Home. (n.d.). Retrieved from http://autism.ideas.org.my/
+
+Home. (n.d.). Retrieved from https://www.autismmalaysia.com/
+
+
 ------------------------------------END OF README SAMPLE ----------------------------------------
