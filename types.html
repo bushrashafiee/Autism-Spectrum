@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="en">
+<title>Autism Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="furtheraction.css">
+<link rel="stylesheet" href="furtheraction.html">
+<link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="types.html">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+<link rel="stylesheet" href="side.css">
+ <div class="sidenav">
+   <h1>Autism<br> Spectrum</h1>
+   <a href="index.html">Home</a>
+   <a href="about.html"><button class="sidebar-btn">About</a>
+</button>
+<div class="sidebar-container">
+<a href="history.html">History</a>
+<a href="symptoms.html">Symptoms</a>
+<a href="causes.html">Causes</a>
+<a href="types.html">Types</a>
+</div>
+   <a href="index.html">Treatments</a>
+   <a href="furtheraction.html">Further Action</a>
+   <a href="index.html">Contact</a>
+ </div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+<link rel="stylesheet" href="home.css">
+    <div class="image-container"style="margin-top:80px; padding-bottom:50px;" id="home">
+  <div class="text">TYPES</div>
+
+</div>
+
+<div class="topnav">
+
+  <a class="active" href="type.html">High-Functioning</a>
+  <a href="asperger.html">Aspeger Syndrome</a>
+  <a href="pdd.html">Pervasive Developmental Disorder</a>
+  <a href="Rett.html">Rett Syndrome</a>
+</div>
+<div id="isi">
+
+
+<h1><b>High Functioning Autism</b></h1>
+<p>High-functioning autism (HFA) is a term applied to people with autism who are deemed to be cognitively "higher functioning" (with an IQ of 70 or greater) than other people with autism.Individuals with HFA or Asperger syndrome may exhibit deficits in areas of communication, emotion recognition and expression, and social interaction.HFA is not a recognized diagnosis in the DSM-5 or the ICD-10.
+
+The amount of overlap between HFA and Asperger syndrome is disputed</p>
+
+<p><u>Diagnosis</u></p>
+<p>Cases are typically diagnosed by 35 months of age, much earlier than those of Asperger syndrome. This phenomenon is most likely due to the early delay in speech and language. While there is no single accepted standard diagnostic measure for HFA, one of the most commonly used tools for early detection is the Social Communication Questionnaire. If the results of the test indicate an autism spectrum disorder, a comprehensive evaluation may lead to the diagnosis of HFA. Some characteristics used to diagnose an individual with autism include a lack of eye contact, pointing, and deficits in social interactions.The Autism Diagnostic Interview-Revised and Autism Diagnostic Observation Schedule are two evaluations utilized in the standard diagnosis process.
+
+There are two classifications of different social interaction styles associated with HFA. The first is an active-but-odd social interaction style classified by ADHD symptoms, poor executive functioning, and psychosocial problems. The difficulty controlling impulses could cause the active-but-odd social behaviors present in some children with HFA. The second social interaction type is a passive style. This aloof style is characterized by a lack of social initiations and could possibly be caused by social anxiety.</p>
+
+</div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

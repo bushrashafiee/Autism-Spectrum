@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Autism Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="furtheraction.css">
+<link rel="stylesheet" href="simulation.html">
+<link rel="stylesheet" href="index.html">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+
+<link rel="stylesheet" href="side.css">
+ <div class="sidenav">
+   <h1>Autism<br> Spectrum</h1>
+   <a href="index.html">Home</a>
+   <a href="about.html"><button class="sidebar-btn">About</a>
+</button>
+<div class="sidebar-container">
+<a href="history.html">History</a>
+<a href="symptoms.html">Symptoms</a>
+<a href="causes.html">Causes</a>
+<a href="types.html">Types</a>
+</div>
+   <a href="index.html">Treatments</a>
+   <a href="furtheraction.html">Further Action</a>
+   <a href="index.html">Contact</a>
+ </div>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+<link rel="stylesheet" href="home.css">
+    <div class="image-container"style="margin-top:80px; padding-bottom:50px;" id="home">
+  <div class="text">AUTISM</div>
+
+</div>
+
+<div class="topnav">
+  <a href="types.html">High-Functioning</a>
+  <a href=asperger.html>Asperger Syndrome</a>
+  <a href="pdd.html">Pervasive Developmental Disorder</a>
+  <a class="active" href="Rett.html">Rett Syndrome</a>
+</div>
+
+<div id="isi">
+
+<h1><b>Rett Syndrome</b></h1>
+<p>Rett syndrome is a rare non-inherited genetic postnatal neurological disorder that occurs almost exclusively in girls and leads to severe impairments, affecting nearly every aspect of the child’s life: their ability to speak, walk, eat, and even breathe easily. The hallmark of Rett syndrome is near constant repetitive hand movements while awake. Cognitive assessment in children with Rett syndrome is complicated, but we know that they understand far more than they can communicate to us, evidenced by their bright and attentive eyes, and their ability to express a wide spectrum of moods and emotions.</p>
+
+<p><u>Diagnosis</u></p>
+<p>A diagnosis of Rett syndrome is based on a girl’s pattern of symptoms and behavior. Doctors can make the diagnosis based on these observations alone and by talking to the girl’s parents about things like when the symptoms started. Because Rett syndrome is rare, doctors will first rule out other conditions, including autism spectrum disorder, cerebral palsy, metabolic disorders, and prenatal brain disorders. Genetic testing can help confirm the diagnosis in 80% of girls with suspected Rett syndrome. These tests may also predict how severe it will be.
+
+<p/>
+</div>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
