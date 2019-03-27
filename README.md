@@ -2,7 +2,7 @@
 Group Alpha
 ‘Autism’
 
-Prepared by Bushra Shafiee (1726824) and Aaa (matricNo)
+Prepared by Bushra Shafiee (1726824), Nur Aida Afrina Binti Zulnazri (1729832)
 
 ‘Autism’ is an informative website for autism based in Kuala Lumpur, Malaysia.
 
@@ -21,8 +21,8 @@ Contributions :  • Pages: Introduction
 Future enhancements : • Add image or video 
 
 Name : Aida
-Contributions :  • Pages: Introduction
-• Web elements: Hover Dropdown, Image with transparent text
+Contributions :  • Pages: About(symptoms and causes)
+• Web elements: Flip-card
 Future enhancements : • Add image or video
 • Enhance contents 
 
