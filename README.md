@@ -11,8 +11,8 @@ Prepared by Bushra Shafiee (1726824) and Aaa (matricNo)
 Table 1 Group Contribution
 
 Name : Bushra
-Contributions :  • Pages: Further Action
-• Web elements: Hover Dropdown, Table, Google Map
+Contributions :  • Pages: Further Action, Simulation, Videos, Maps
+• Web elements: Hover Dropdown, Table, Google Map, Video
 Future enhancements : • Add options for area of autism centre
 
 Name : Nabila
