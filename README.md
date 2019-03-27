@@ -5,16 +5,8 @@ Group Alpha
 Prepared by Bushra Shafiee (1726824) and Aaa (matricNo)
 
 ‘Autism’ is an informative website for autism based in Kuala Lumpur, Malaysia.
-1. Group Contributions
-Each of the team members prepared 4 web pages for the progress presentation
-as shown in Table 1. At the moment, only a sample of 5 products is shown in
-Catalogue A and Catalogue B.
 
-2. Future enhancement
-A list of completed products (at least 8 products per pages) will be displayed
-during the final presentation. Future enhancement shall also include
-interactions and storage of data for the Add-To-Cart page. Contributions are
-shown in Table 1.
+1. Group Contributions and Future Enhancement
 
 Table 1 Group Contribution
 
@@ -46,11 +38,12 @@ Contributions :  • Pages: home, contact, layout
 Future enhancements : • enhance graphic
 • 
 
-3. Use of third party resources
-
 Web elements: Graphics for Treatments
 Team member: Sabrina
 Modifications: All graphics are resized using CSS.
+
+
+2. Use of third party resources
 
 References
 W3.CSS Templates. The Interior Design Template. Retrieved 25 March 2019 from https://www.w3schools.com/w3css/w3css_templates.asp
