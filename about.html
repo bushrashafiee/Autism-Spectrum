@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Autism Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="furtheraction.html">
+
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+  <link rel="stylesheet" href="side.css">
+  <div class="sidenav">
+    <h1>Autism<br> Spectrum</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html"><button class="sidebar-btn">About</a>
+ </button>
+ <div class="sidebar-container">
+ <a href="history.html">History</a>
+ <a href="symptoms.html">Symptoms</a>
+ <a href="causes.html">Causes</a>
+ <a href="types.html">Types</a>
+ </div>
+    <a href="index.html">Treatments</a>
+    <a href="furtheraction.html">Further Action</a>
+    <a href="index.html">Contact</a>
+  </div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <!-- Header -->
+<link rel="stylesheet" href="home.css">
+    <div class="image-container"style="margin-top:80px" id="home">
+  <div class="text">ABOUT</div>
+
+</div>
+
+
+  <!-- Introduction -->
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
