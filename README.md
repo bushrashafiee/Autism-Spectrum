@@ -33,10 +33,10 @@ Future enhancements : • Add video
 • Enhace contents 
 
 Name : Syamimi
-Contributions :  • Pages: home, contact, layout
+Contributions :  • Pages: about, contact, history
 • Web elements: cutout text,color, font text
 Future enhancements : • enhance graphic
-• 
+• less wording • pop-up menu • add video •  enhance contents
 
 Web elements: Graphics for Treatments
 Team member: Sabrina
@@ -67,4 +67,5 @@ How to create a Side Navigation. Retrieved 25 March 2019 from https://www.w3scho
 Contact us. Kuching Autistic Association. Retrieved 25 March 2019 from http://www.kaa.org.my/ContactUs.html
 Contact us. INTERNATIONAL PSYCHOLOGY CENTRE SDN BHD. Retrieved 25 March 2019 from http://www.psychology.com.my/contact-us/#.XJlj1ygza00
 
+WHAT IS THE HISTORY OF AUTISM SPECTRUM DISORDER?. HARKLA.Retrieved 25 March 2019 from https://harkla.co/blogs/special-needs/history-of-autism
 ------------------------------------END OF README SAMPLE ----------------------------------------
