@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <title>Autism Spectrum</title>
 <meta charset="UTF-8">
@@ -27,7 +28,8 @@ body {font-size:16px;}
   <div class="sidenav">
     <h1>Autism<br> Spectrum</h1>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html"><button class="sidebar-btn">About</a>
+ </button>
  <div class="sidebar-container">
  <a href="history.html">History</a>
  <a href="symptoms.html">Symptoms</a>
@@ -51,33 +53,44 @@ body {font-size:16px;}
 </div>
 
   <!-- Contact -->
-  <div class="container" id="contact" style="margin-top:75px">
-    <h1 ><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid steelblue" class="w3-round">
-    <p>Contact autism society to gain more information</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-      <p>Contact Information: <p> <br>
-        <p>Kuala Lumpur: <br>
+<link rel="stylesheet" href="contactstyle.css">
+  <div class="container">
+    <form action="action_page.php">
 
-          INTERNATIONAL PSYCHOLOGY CENTRE SDN BHD<br>
-          (Company No. :885574-M》<br>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-          11-1, Wisma Laxton,<br>
-          Jalan Desa, Taman Desa 58100<br>
-          Kuala Lumpur, Malaysia.<br>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-          Tel : 603-2727 7434   </p>
+      <label for="contactno">Contact No.</label>
+      <input type="text" id="cnumber" name="contactno" placeholder="Your contact no..">
 
-          <p>  Kuching : <br>
-          Office & Educational centre<br>
-          Kuching Autistic Association <br>
-          Lot 5492, Block 225 KNLD, <br>
-          Lorong 15, Jalan Desa Wira, <br>
-          93250 Kuching, Sarawak. <br>
-          Tel: +6082 686363    Fax: +6082 686362</p>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
 
+      <label for="state">State</label>
+      <select id="state" name="state">
+        <option value="Perlis">Perlis</option>
+        <option value="Kedah">Kedah</option>
+        <option value="Penang">Penang</option>
+        <option value="Perak">Perak</option>
+        <option value="Selangor">Selangor</option>
+        <option value="Kuala Lumpur">Kuala Lumpur</option>
+        <option value="Pahang">Pahang</option>
+        <option value="Kelantan">Kelantan</option>
+        <option value="Terengganu">Terengganu</option>
+        <option value="Melaka">Melaka</option>
+        <option value="Negeri Sembilan">Negeri Sembilan</option>
+        <option value="Johor">Johor</option>
+        <option value="Sabah">Johor</option>
+          <option value="Sarawak">Sarawak</option>
+      </select>
 
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
 
     </form>
   </div>
