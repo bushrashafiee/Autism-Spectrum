@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <title>Autism Spectrum</title>
 <meta charset="UTF-8">
@@ -20,13 +19,12 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 
 </style>
-<body>
+<body onload="load()">
 
 <!-- Sidebar/menu -->
 
   <link rel="stylesheet" href="side.css">
   <div class="sidenav">
-     <div class="sidebar-container">
     <h1>Autism<br> Spectrum</h1>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -35,10 +33,10 @@ body {font-size:16px;}
     <a href="causes.html">Causes</a>
     <a href="types.html">Types</a>
     <a href="index.html">Treatments</a>
-    <a href="furtheraction.html">Further Information</a>
+    <a href="furtheraction.html">Further Action</a>
     <a href="index.html">Contact</a>
   </div>
-  </div>  
+
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
@@ -82,21 +80,48 @@ body {font-size:16px;}
         <option value="Negeri Sembilan">Negeri Sembilan</option>
         <option value="Johor">Johor</option>
         <option value="Sabah">Johor</option>
-          <option value="Sarawak">Sarawak</option>
+        <option value="Sarawak">Sarawak</option>
       </select>
 
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-      <input type="submit" value="Submit">
-
+      <p><button onclick="save()" type="button">Submit</button></p>
     </form>
   </div>
 
 <!-- End page content -->
 </div>
-
 <script>
+function save() {
+  var fnameValue = document.getElementById("fname").value ;
+  localStorage.setItem('text',fnameValue);
+  var lnameValue = document.getElementById("lname").value ;
+  localStorage.setItem('text',lnameValue);
+  var cnumberValue = document.getElementById("cnumber").value;
+  localStorage.setItem('text',cnumberValue);
+  var emailValue = document.getElementById("email").value;
+  localStorage.setItem('text',emailValue);
+  var stateValue = document.getElementById("state").value ;
+  localStorage.setItem('option value',stateValue);
+  var subjectValue = document.getElementById("subject").value;
+  localStorage.setItem('text',subjectValue)
+
+}
+function load(){
+  var storedValue = localStorage.getItem('text');
+if(storedValue){
+
+  document.getElementById('fname').value = storedValue;
+  document.getElementById('lname').value = storedValue;
+  document.getElementById('cnumber').value = storedValue;
+  document.getElementById('email').value = storedValue;
+  document.getElementById('state').value = storedValue;
+  document.getElementById('subject').value = storedValue;
+
+}
+
+}
+
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
