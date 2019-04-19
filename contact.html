@@ -83,8 +83,8 @@ body {font-size:16px;}
         <option value="Sarawak">Sarawak</option>
       </select>
 
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
       <p><button onclick="save()" type="button">Submit</button></p>
     </form>
   </div>
@@ -103,7 +103,7 @@ function save() {
   localStorage.setItem('text',emailValue);
   var stateValue = document.getElementById("state").value ;
   localStorage.setItem('option value',stateValue);
-  var subjectValue = document.getElementById("subject").value;
+  var messageValue = document.getElementById("message").value;
   localStorage.setItem('text',subjectValue)
 
 }
@@ -116,7 +116,7 @@ if(storedValue){
   document.getElementById('cnumber').value = storedValue;
   document.getElementById('email').value = storedValue;
   document.getElementById('state').value = storedValue;
-  document.getElementById('subject').value = storedValue;
+  document.getElementById('message').value = storedValue;
 
 }
 
