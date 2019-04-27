@@ -22,6 +22,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+
 </style>
 <body>
 
@@ -36,63 +37,32 @@ body {font-size:16px;}
      <h1>Autism<br> Spectrum</h1>
      <a href="index.html">Home</a>
      <a href="about.html">About</a>
+     <div class="sidebar-container">
      <a href="history.html">History</a>
      <a href="symptoms.html">Symptoms</a>
      <a href="causes.html">Causes</a>
      <a href="types.html">Types</a>
-     <a href="treatments.html">Treatments</a>
-     <a href="furtheraction.html">Further Information</a>
-     <a href="contact.html">Contact</a>
 </div>
    <a href="treatments.html">Treatments</a>
    <a href="furtheraction.html">Further Information</a>
    <a href="contact.html">Contact</a>
  </div>
 
-
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
   <link rel="stylesheet" href="home.css">
-      <div class="image-container"style="margin-top:80px; padding-bottom:30px;" id="home">
+      <div class="image-container"style="margin-top:80px; padding-bottom:50px;" id="home">
     <div class="text">TREATMENTS</div>
 
   </div>
 
-    <style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  </style>
-  </head>
-  <body>
-  
-  <ul>
-    <li><a class="active" href="treatmentsautism.html">Treatments For Autism</a></li>
-    <li><a href="therapies.html">Type Of Therapies For Autism</a></li>
-    <li><a href="treatment_centres.html">Treatment Centres</a></li>
-  </ul>
+  <div class="topnav">
+    <a class="active" href="treatmentsautism.html">Treatments For Autism</a>
+    <a href="therapies.html">Type Of Therapies For Autism</a>
+    <a href="treatment_centres.html">Treatment Centres</a>
+  </div>
 
   <div class="w3-container" id="treatments" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Treatments</b></h1>
@@ -100,3 +70,30 @@ body {font-size:16px;}
     <p>"What do I do next?" This is a question that has undoubtedly been asked by every parent of a child with an autism spectrum disorder (ASD). In many cases, it comes after the "What is autism?" and "How did it happen?" Unfortunately, just as with the first two questions, the answer isn't very satisfying. Although many treatments and therapies are proposed to help, few have been studied enough to know whether they really do (or don't) work, and for which children. This reality is frustrating and confusing for families and professionals caring for children with ASD.</p>
     <p>In this section, we explore current autism treatments, the evidence that supports their use, and what we are learning from the experience of individuals and families who have tried them.</p>
     </div>
+
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script type="text/javascript" src="topbutton.js"></script>
+
+
+    </body>
+    </html>
