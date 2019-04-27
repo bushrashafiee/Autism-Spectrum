@@ -36,13 +36,11 @@ body {font-size:16px;}
      <h1>Autism<br> Spectrum</h1>
      <a href="index.html">Home</a>
      <a href="about.html">About</a>
+     <div class="sidebar-container">
      <a href="history.html">History</a>
      <a href="symptoms.html">Symptoms</a>
      <a href="causes.html">Causes</a>
      <a href="types.html">Types</a>
-     <a href="treatments.html">Treatments</a>
-     <a href="furtheraction.html">Further Information</a>
-     <a href="contact.html">Contact</a>
 </div>
    <a href="treatments.html">Treatments</a>
    <a href="furtheraction.html">Further Information</a>
@@ -61,10 +59,12 @@ body {font-size:16px;}
   </div>
 
   <div class="topnav">
-    <a href="treatmentsautism.html">Treatments For Autism</a>
+
+    <a class="active" href="treatmentsautism.html">Treatments For Autism</a>
     <a href="therapies.html">Type Of Therapies For Autism</a>
-    <a class="active" href="treatment_centres.html">Treatment Centres</a>
+    <a href="treatment_centres.html">Treatment Centres</a>
   </div>
+  <div class="isi" style="font-size:18" >
 
   <div class="w3-container" id="treatments" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Treatments</b></h1>
@@ -146,3 +146,30 @@ body {font-size:16px;}
 
     </div>
       </div>
+
+      <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      </script>
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script type="text/javascript" src="topbutton.js"></script>
+
+
+      </body>
+      </html>
