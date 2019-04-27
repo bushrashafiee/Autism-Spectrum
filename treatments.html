@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
 <link rel="stylesheet" href="intro.css">
 <link rel="stylesheet" href="furtheraction.html">
+<link rel="stylesheet" href="furtheraction.css">
 <link rel="stylesheet" href="symptoms.html">
 <link rel="stylesheet" href="causes.html">
 <link rel="stylesheet" href="types.html">
@@ -15,8 +16,8 @@
 <link rel="stylesheet" href="treatment_centres.html">
 <link rel="stylesheet" href="treatmentsautism.html">
 <link rel="stylesheet" href="topbutton.css">
-
 <style>
+
 
 body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
 body {font-size:16px;}
@@ -27,7 +28,7 @@ body {font-size:16px;}
 <body>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <script type="text/javascript" src="topbutton.js"></script>
+  <script type="text/javascript" src="topbutton.js"></script>
 
 <!-- Sidebar/menu -->
 
@@ -64,11 +65,26 @@ body {font-size:16px;}
     <a href="treatment_centres.html">Treatment Centres</a>
   </div>
 
-  <div class="w3-container" id="treatments" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Treatments</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>"What do I do next?" This is a question that has undoubtedly been asked by every parent of a child with an autism spectrum disorder (ASD). In many cases, it comes after the "What is autism?" and "How did it happen?" Unfortunately, just as with the first two questions, the answer isn't very satisfying. Although many treatments and therapies are proposed to help, few have been studied enough to know whether they really do (or don't) work, and for which children. This reality is frustrating and confusing for families and professionals caring for children with ASD.</p>
+    <h1><b>"What do I do next?"</b></h1>
+    <p>This is a question that has undoubtedly been asked by every parent of a child with an autism spectrum disorder (ASD). In many cases, it comes after the "What is autism?" and "How did it happen?" Unfortunately, just as with the first two questions, the answer isn't very satisfying. Although many treatments and therapies are proposed to help, few have been studied enough to know whether they really do (or don't) work, and for which children. This reality is frustrating and confusing for families and professionals caring for children with ASD.</p>
     <p>In this section, we explore current autism treatments, the evidence that supports their use, and what we are learning from the experience of individuals and families who have tried them.</p>
     </div>
 
- 
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
