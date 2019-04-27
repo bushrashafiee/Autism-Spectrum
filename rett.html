@@ -9,12 +9,109 @@
 <link rel="stylesheet" href="furtheraction.css">
 <link rel="stylesheet" href="simulation.html">
 <link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="topbutton.css">
 <style>
 
 body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
 
 </style>
 <body>
@@ -26,7 +123,7 @@ body {font-size:16px;}
  <div class="sidenav">
    <h1>Autism<br> Spectrum</h1>
    <a href="index.html">Home</a>
-   <a href="about.html"><button class="sidebar-btn">About</a>
+   <a href="about.html">About</a>
 </button>
 <div class="sidebar-container">
 <a href="history.html">History</a>
@@ -60,13 +157,77 @@ body {font-size:16px;}
 
 <div id="isi">
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript" src="topbutton.js"></script>
+
 <h1><b>Rett Syndrome</b></h1>
+<p><i>"Imagine the symptoms of autism, cerebral palsy, Parkinson's, epilepsy, and anxiety disorders ... all in one little girl!"</i></p>
+<div style="text-align:center">
+
+  <p>Click us !</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="rett1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="rett2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="rett3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="rett4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
 <p>Rett syndrome is a rare non-inherited genetic postnatal neurological disorder that occurs almost exclusively in girls and leads to severe impairments, affecting nearly every aspect of the child’s life: their ability to speak, walk, eat, and even breathe easily. The hallmark of Rett syndrome is near constant repetitive hand movements while awake. Cognitive assessment in children with Rett syndrome is complicated, but we know that they understand far more than they can communicate to us, evidenced by their bright and attentive eyes, and their ability to express a wide spectrum of moods and emotions.</p>
 
-<p><u>Diagnosis</u></p>
-<p>A diagnosis of Rett syndrome is based on a girl’s pattern of symptoms and behavior. Doctors can make the diagnosis based on these observations alone and by talking to the girl’s parents about things like when the symptoms started. Because Rett syndrome is rare, doctors will first rule out other conditions, including autism spectrum disorder, cerebral palsy, metabolic disorders, and prenatal brain disorders. Genetic testing can help confirm the diagnosis in 80% of girls with suspected Rett syndrome. These tests may also predict how severe it will be.
+<p><b>Stages of Rett syndrome</b></p>
 
-<p/>
+<ul id="myUL">
+  <li><span class="caret">Stage 1 : 6 to 18 months</span>
+    <ul class="nested">
+      <li>In this stage the first signs of the syndrome may become apparent.
+          May show a lack of interest in toys. May be calm and placid.Development of motor skills may be slow. Head growth may slow</li>
+
+    </ul>
+  </li>
+  <li><span class="caret">Stage 2 : 1 to 4 years</span>
+    <ul class="nested">
+      <li>In this stage, the greatest changes occurs, often rapid, though it may also be gradual.
+May show lack of interest in social interaction and development of communication skills may be poor. May be quite irritable.
+Repetitive hand motions may become apparent and purposeful hand skills may be lost.
+Growth of head circumference may be slow.
+Breathing problems may arise</li>
+
+    </ul>
+  </li>
+  <li><span class="caret">Stage 3 : 2 to 10 years</span>
+    <ul class="nested">
+      <li>In this stage, the rapid regression of stage 2 will slow and improvements may be seen in behaviour, particularly in irritability. Should show more alertness and be communicative.
+
+Motor control may still deteriorate. Loss of muscle tone may become apparent. May start having seizures.</li>
+
+    </ul>
+  </li>
+  <li><span class="caret">Stage 4 : 10+ years</span>
+    <ul class="nested">
+      <li>This stage is characterised by loss of mobility. The ability to walk may be lost, if it had been acquired. Stiffness and curving of the spine (scoliosis) may occur.
+
+Communication abilities and cognition should not decrease however and repetitive hand motions may decrease./li>
+
+    </ul>
+  </li>
+
+</ul>
 </div>
 
 </div>
@@ -89,6 +250,24 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
 </script>
 
