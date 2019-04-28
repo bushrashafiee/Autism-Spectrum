@@ -33,7 +33,7 @@ Future enhancements : • Add video
 • Enhace contents 
 
 Name : Syamimi
-Contributions :  • Pages: about, contact, history
+Contributions :  • Pages: about (facts and myths), contact, history
 • Web elements: cutout text,color, font text
 Future enhancements : • enhance graphic
 • less wording • pop-up menu • add video •  enhance contents
