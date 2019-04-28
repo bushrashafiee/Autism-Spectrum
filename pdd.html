@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="simulation.html">
 <link rel="stylesheet" href="index.html">
 <link rel="stylesheet" href="topbutton.css">
+<link rel="stylesheet" href="down.css">
 
 <style>
 
@@ -83,11 +84,26 @@ Consequently, those with PDD-NOS are sometimes thought to have a "milder" form o
 <br><br>
 <b>How to Grow With It ?</b>
 <br>
-<li>Teens & Adults</li>
-Adolescence is hard enough for children who aren't on the spectrum, so you can imagine the challenges that teens (and even adults) with PDD-NOS face. They're equally hampered by hormonal fluctuations, but also have to take on the complicated (and sometimes cruel) social habits of their peers even though they don't have the full complement of skills to do so. Dating will be thorny though some may ignore this rite of passage altogether and friendships, so simple for young children, may prove to be more daunting. This is why your child may need more support at this stage than ever before, especially as they grow more aware of their own condition. A counselor trained with dealing with teens on the spectrum can help immensely, as will knowing that you're by their side every step of the way as they learn how to navigate a bigger and more complex world.
-<br>
-<li>Long-Term Care</li>
-It's difficult to predict how easy or hard life will be in the long run for a person with PDD-NOS, as much depends on the severity of his or her symptoms and how he or she reacts to therapies. But if, like many others, the condition is on the "milder" side of the spectrum, your child will likely be able to care for himself or herself while growing older. Marriage and parenting may prove overwhelming for some, though not necessarily for all of those with PDD-NOS. The good news: It's possible to enjoy a full, if complicated, life.
+
+
+
+<ul id="myUL">
+  <li><span class="caret">Teens & Adults</span>
+    <ul class="nested">
+      <li>Adolescence is hard enough for children who aren't on the spectrum, so you can imagine the challenges that teens (and even adults) with PDD-NOS face. They're equally hampered by hormonal fluctuations, but also have to take on the complicated (and sometimes cruel) social habits of their peers even though they don't have the full complement of skills to do so. Dating will be thorny though some may ignore this rite of passage altogether and friendships, so simple for young children, may prove to be more daunting. This is why your child may need more support at this stage than ever before, especially as they grow more aware of their own condition. A counselor trained with dealing with teens on the spectrum can help immensely, as will knowing that you're by their side every step of the way as they learn how to navigate a bigger and more complex world.
+</li>
+
+    </ul>
+  </li>
+  <li><span class="caret">Long-Term Care</span>
+    <ul class="nested">
+      <li>It's difficult to predict how easy or hard life will be in the long run for a person with PDD-NOS, as much depends on the severity of his or her symptoms and how he or she reacts to therapies. But if, like many others, the condition is on the "milder" side of the spectrum, your child will likely be able to care for himself or herself while growing older. Marriage and parenting may prove overwhelming for some, though not necessarily for all of those with PDD-NOS. The good news: It's possible to enjoy a full, if complicated, life./li>
+
+    </ul>
+
+
+
+
 
 </div>
 
@@ -103,6 +119,15 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
+}
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
 }
 
 // Modal Image Gallery
