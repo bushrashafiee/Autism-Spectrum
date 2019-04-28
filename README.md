@@ -16,9 +16,10 @@ Contributions :  • Pages: Further Action, Simulation, Videos, Maps
 Future enhancements : • Add options for area of autism centre
 
 Name : Nabila
-Contributions :  • Pages: Introduction
-• Web elements: Hover Dropdown
+Contributions :  • Pages: Introduction , High Functioning , Pervasive Developement Disorder, Aspeger Syndrome , Rett Syndrome 
+• Web elements: Hover Dropdown , top button , dropdown arrow , tab image.
 Future enhancements : • Add image or video 
+
 
 Name : Aida
 Contributions :  • Pages: About(symptoms and causes)
@@ -33,7 +34,7 @@ Future enhancements : • Add video
 • Enhace contents 
 
 Name : Syamimi
-Contributions :  • Pages: about (facts and myths), contact, history
+Contributions :  • Pages: about, contact, history
 • Web elements: cutout text,color, font text
 Future enhancements : • enhance graphic
 • less wording • pop-up menu • add video •  enhance contents
