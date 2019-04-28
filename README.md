@@ -13,31 +13,27 @@ Table 1 Group Contribution
 Name : Bushra
 Contributions :  • Pages: Further Action, Simulation, Videos, Maps
 • Web elements: Hover Dropdown, Table, Google Map, Video
-Future enhancements : • Add options for area of autism centre
+
 
 Name : Nabila
-Contributions :  • Pages: Introduction , High Functioning , Pervasive Developement Disorder, Aspeger Syndrome , Rett Syndrome 
-• Web elements: Hover Dropdown , top button , dropdown arrow , tab image.
-Future enhancements : • Add image or video 
+Contributions :  • Pages: Introduction
+• Web elements: Hover Dropdown
 
 
 Name : Aida
-Contributions :  • Pages: About(symptoms and causes)
-• Web elements: Flip-card
-Future enhancements : • Add image or video
-• Enhance contents 
+Contributions :  • Pages: Symptoms, Communication, Social, Restricted, Ages, Causes
+• Web elements: Collapsibles/Accordion, list bullet
+
 
 Name : Sabrina
 Contributions :  • Pages: Treatment
 • Web elements: List bullet, Image with transparent text
-Future enhancements : • Add video
-• Enhace contents 
+
 
 Name : Syamimi
 Contributions :  • Pages: about, contact, history
 • Web elements: cutout text,color, font text
-Future enhancements : • enhance graphic
-• less wording • pop-up menu • add video •  enhance contents
+
 
 Web elements: Graphics for Treatments
 Team member: Sabrina
