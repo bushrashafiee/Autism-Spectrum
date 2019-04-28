@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Autism Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
+
+<style>
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  width: 350px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f1f1f1;}
+
+body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
+body {font-size:20px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+<link rel="stylesheet" href="side.css">
+  <div class="sidenav">
+    <div class="sidebar-container">
+    <h1>Autism<br> Spectrum</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+    <a href="symptoms.html">Symptoms</a>
+    <a href="causes.html">Causes</a>
+    <a href="types.html">Types</a>
+    <a href="treatments.html">Treatments</a>
+    <a href="furtheraction.html">Further Information</a>
+    <a href="contact.html">Contact</a>
+  </div>
+ </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+<link rel="stylesheet" href="headersymptoms.css">
+    <div class="image-container"style="margin-top:80px" id="home">
+  <div class="text">SYMPTOMS</div>
+
+</div><br>
+
+<br><h2><b>Social Challenges</b></h2><br>
+<img src="social.jpg" alt="Social" style="width:400px;height:250px; margin-left:23%; margin-right:30%;">
+<p><ul><li>Recognizing emotions and intentions in others</li>
+  <li>Recognizing one’s own emotions</li>
+  <li>Expressing emotions</li>
+  <li>Seeking emotional comfort from others</li>
+  <li>Feeling overwhelmed in social situations</li>
+  <li>Taking turns in conversation</li>
+  <li>Gauging personal space (appropriate distance between people)</li></ul></p>
+
+
+  <br><h4><a href="symptoms.html"><button>Back</button></a></h4><br>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
