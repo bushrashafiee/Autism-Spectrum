@@ -8,7 +8,7 @@
 .text {
   background-color: white;
   color: steelblue;
-  font-size: 10vw; /* Responsive font size */
+  font-size: 8vw; /* Responsive font size */
   font-weight: bold;
   margin: 0 auto; /* Center the text container */
   padding: 10px;
