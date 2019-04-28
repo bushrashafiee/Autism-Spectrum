@@ -2,7 +2,7 @@
 Group Alpha
 ‘Autism’
 
-Prepared by Bushra Shafiee (1726824), Nur Aida Afrina Binti Zulnazri (1729832), Nur Sabrina binti Nor Azhar (1727772),
+Prepared by Bushra Shafiee (1726824), Nur Aida Afrina Binti Zulnazri (1729832), Nur Sabrina binti Nor Azhar (1727772), Nur Syamimi binti Muzafarkamal (1722414)
 
 ‘Autism’ is an informative website for autism based in Kuala Lumpur, Malaysia.
 
