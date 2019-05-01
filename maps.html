@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Autism Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Neuton" rel="stylesheet">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="furtheraction.html">
+  <link rel="stylesheet" href="furtheraction.css">
+<link rel="stylesheet" href="symptoms.html">
+<link rel="stylesheet" href="causes.html">
+<link rel="stylesheet" href="types.html">
+<link rel="stylesheet" href="treatments.html">
+<link rel="stylesheet" href="therapies.html">
+<link rel="stylesheet" href="treatment_centres.html">
+<link rel="stylesheet" href="treatmentsautism.html">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Neuton";}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#map {
+  height: 600px;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+  <link rel="stylesheet" href="side.css">
+  <div class="sidenav">
+    <h1>Autism<br> Spectrum</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+ <div class="sidebar-container">
+ <a href="history.html">History</a>
+ <a href="symptoms.html">Symptoms</a>
+ <a href="causes.html">Causes</a>
+ <a href="types.html">Types</a>
+ </div>
+    <a href="treatments.html">Treatments</a>
+    <a href="furtheraction.html">Further Information</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ <!-- Header -->
+<link rel="stylesheet" href="furtheraction.css">
+    <div class="image-container"style="margin-top:80px; padding-bottom:50px;" id="home">
+  <div class="text">FURTHER<br>INFORMATION</div>
+</div>
+
+<div class="topnav">
+  <a href="furtheraction.html">Information</a>
+  <a href="simulation.html">Simulation</a>
+  <a class="active" href=maps.html>Maps</a>
+</div>
+
+<h1><b>Maps of the Nearest Autism Help Centre to You</b></h1>
+<hr style="width:50px;border:5px solid steelblue" class="w3-round">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places"></script>
+
+<div>
+  <h2>Please Choose a City</h2>
+</div>
+<form>
+  <fieldset>
+    <label>
+      Cities
+    </label>
+    <select id="myCity" name="myCity" onchange="changeMap(this.value)">
+      <option value="None">Select a State</option>
+      <option value="JHR">Johor</option>
+      <option value="KDH">Kedah</option>
+      <option value="KLNTN">Kelantan</option>
+      <option value="KL">Kuala Lumpur</option>
+      <option value="MLK">Melaka</option>
+      <option value="NS">Negeri Sembilan</option>
+      <option value="PHG">Pahang</option>
+      <option value="PRK">Perak</option>
+      <option value="PP">Pulau Pinang</option>
+      <option value="SBH">Sabah</option>
+      <option value="SRWK">Sarawak</option>
+      <option value="SLGR">Selangor</option>
+      <option value="TGN">Terengganu</option>
+    </select>
+  </fieldset>
+</form>
+<div id="map"></div>
+
+<script type="text/javascript">
+var map;
+function myMap() {
+var mapCanvas = document.getElementById("map");
+var mapOptions = {
+  center: new google.maps.LatLng(3.1390, 101.6869),
+  zoom: 20
+};
+map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+myMap();
+var coords = {
+  'JHR': '1.8483834, 102.9525716',
+  'KDH': '6.1405403, 100.3738571',
+  'KLNTN': '6.1038905,102.2846865',
+  'KL': '3.1852672, 101.7027354',
+  'MLK': '2.2165476, 102.2666078',
+  'NS': '2.7391149, 101.9547594',
+  'PHG': '3.8137392, 103.3316036',
+  'PRK': '4.5923303, 101.1289241',
+  'PP': '5.3210358, 100.2881519',
+  'SBH': '5.9528922, 116.0536392',
+  'SRWK': '4.4335873, 114.0052592',
+  'SLGR': '3.112345, 101.5700969',
+  'TGN': '3.8133736, 103.3314256'
+};
+
+function changeMap(city) {
+var c = coords[city].split(',');
+map.setCenter(new google.maps.LatLng(c[0], c[1]));
+}
+
+var input = document.getElementById('pac-input');
+var searchBox = new google.maps.places.SearchBox(input);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+// Bias the SearchBox results towards current map's viewport.
+map.addListener('bounds_changed', function() {
+  searchBox.setBounds(map.getBounds());
+});
+
+var markers = [];
+// Listen for the event fired when the user selects a prediction and retrieve
+// more details for that place.
+searchBox.addListener('places_changed', function() {
+  var places = searchBox.getPlaces();
+
+  if (places.length == 0) {
+    return;
+  }
+
+  // Clear out the old markers.
+  markers.forEach(function(marker) {
+    marker.setMap(null);
+  });
+  markers = [];
+
+  // For each place, get the icon, name and location.
+  var bounds = new google.maps.LatLngBounds();
+  places.forEach(function(place) {
+    if (!place.geometry) {
+      console.log("Returned place contains no geometry");
+      return;
+    }
+    var icon = {
+      url: place.icon,
+      size: new google.maps.Size(71, 71),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(17, 34),
+      scaledSize: new google.maps.Size(25, 25)
+    };
+
+    // Create a marker for each place.
+    markers.push(new google.maps.Marker({
+      map: map,
+      icon: icon,
+      title: place.name,
+      position: place.geometry.location
+    }));
+
+    if (place.geometry.viewport) {
+      // Only geocodes have viewport.
+      bounds.union(place.geometry.viewport);
+    } else {
+      bounds.extend(place.geometry.location);
+    }
+  });
+  map.fitBounds(bounds);
+});
+</script>
+<!--<script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+            // Create the search box and link it to the UI element.
+
+      }
+
+    </script>-->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
