@@ -55,16 +55,16 @@ body {font-size:16px;}
     <form action="action_page.php">
 
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="fname" id="fname" name="firstname" placeholder="Your name..">
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input type="lname" id="lname" name="lastname" placeholder="Your last name..">
 
       <label for="contactno">Contact No.</label>
-      <input type="text" id="cnumber" name="contactno" placeholder="Your contact no..">
+      <input type="cno" id="cnumber" name="contactno" placeholder="Your contact no..">
 
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your email..">
+      <input type="email" id="email" name="email" placeholder="Your email..">
 
       <label for="state">State</label>
       <select id="state" name="state">
@@ -95,31 +95,34 @@ body {font-size:16px;}
 <script>
 function save() {
   var fnameValue = document.getElementById("fname").value ;
-  localStorage.setItem('text',fnameValue);
+  localStorage.setItem('fname',fnameValue);
   var lnameValue = document.getElementById("lname").value ;
-  localStorage.setItem('text',lnameValue);
+  localStorage.setItem('lname',lnameValue);
   var cnumberValue = document.getElementById("cnumber").value;
-  localStorage.setItem('text',cnumberValue);
+  localStorage.setItem('cno',cnumberValue);
   var emailValue = document.getElementById("email").value;
-  localStorage.setItem('text',emailValue);
+  localStorage.setItem('email',emailValue);
   var stateValue = document.getElementById("state").value ;
-  localStorage.setItem('option value',stateValue);
+  localStorage.setItem('stat',stateValue);
   var messageValue = document.getElementById("message").value;
-  localStorage.setItem('text',subjectValue)
+  localStorage.setItem('msg',subjectValue)
 
 }
 function load(){
-  var storedValue = localStorage.getItem('text');
-if(storedValue){
+  var fnameValue = localStorage.getItem('fname');
+  var lnameValue=localStorage.getItem('lname');
+  var cnumberValue=localStorage.getItem('cno');
+  var emailValue=localStorage.getItem('email');
+  var stateValue=localStorage.getItem('state');
+  var messageValue=localStorage.getItem('msg');
 
-  document.getElementById('fname').value = storedValue;
-  document.getElementById('lname').value = storedValue;
-  document.getElementById('cnumber').value = storedValue;
-  document.getElementById('email').value = storedValue;
-  document.getElementById('state').value = storedValue;
-  document.getElementById('message').value = storedValue;
+  document.getElementById('fname').value = fnameValue;
+  document.getElementById('lname').value = lnameValue;
+  document.getElementById('cnumber').value = cnumberValue;
+  document.getElementById('email').value = emailValue;
+  document.getElementById('state').value = stateValue;
+  document.getElementById('message').value = messageValue;
 
-}
 
 }
 
