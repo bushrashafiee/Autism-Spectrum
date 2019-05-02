@@ -32,3 +32,9 @@ input[type=submit]:hover {
   padding: 20px;
   vertical-align: bottom;
 }
+.container label {
+  text-align: left;
+}
+.container label input{
+ text-align: left; 
+}
