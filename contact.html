@@ -109,19 +109,14 @@ function save() {
 
 }
 function load(){
-  var fnameValue = localStorage.getItem('fname');
-  var lnameValue=localStorage.getItem('lname');
-  var cnumberValue=localStorage.getItem('cno');
-  var emailValue=localStorage.getItem('email');
-  var stateValue=localStorage.getItem('state');
-  var messageValue=localStorage.getItem('msg');
+
   
-  document.getElementById('fname').value = fnameValue;
-  document.getElementById('lname').value = lnameValue;
-  document.getElementById('cnumber').value = cnumberValue;
-  document.getElementById('email').value = emailValue;
-  document.getElementById('state').value = stateValue;
-  document.getElementById('message').value = messageValue;
+  document.getElementById('fname').value =  localStorage.getItem('fname');
+  document.getElementById('lname').value = localStorage.getItem('lname');
+  document.getElementById('cnumber').value =localStorage.getItem('cno');
+  document.getElementById('email').value =localStorage.getItem('email');
+  document.getElementById('state').value = localStorage.getItem('state');
+  document.getElementById('message').value =localStorage.getItem('state');
 
 
   
