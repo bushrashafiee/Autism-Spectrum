@@ -29,12 +29,12 @@ body, html {
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0);
-    color: orangered;
+    color: black;
     font-weight: initial;
     border: 7px solid #da5f38;
     position: absolute;
-    top: 90%;
-    left: 60%;
+    top: 150%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
